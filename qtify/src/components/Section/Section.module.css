@@ -4,17 +4,3 @@
 	/* background-color: cornflowerblue; */
 	color: var(--color-white);
 }
-
-.section-header {
-	position: relative;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-.collapse-btn {
-	font-weight: 700;
-	font-family: "Poppins";
-	&:hover {
-		background: none;
-	}
-}
