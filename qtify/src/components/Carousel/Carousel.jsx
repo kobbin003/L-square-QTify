@@ -36,7 +36,7 @@ const Carousel = ({ albumList, sectionName }) => {
 						slidesPerView: 5,
 					},
 					1280: {
-						spaceBetween: 30,
+						spaceBetween: 32,
 						slidesPerView: 6,
 					},
 				}}

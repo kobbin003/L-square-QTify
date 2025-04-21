@@ -4,7 +4,7 @@ import AlbumSectionGrid from "../AlbumSectionGrid/AlbumSectionGrid";
 
 const NewAlbumSection = () => {
 	const [newAlbums, setNewAlbums] = useState([]);
-	const [showGrid, setShowGrid] = useState(true);
+	const [showGrid, setShowGrid] = useState(false);
 
 	useEffect(() => {
 		(async function () {
