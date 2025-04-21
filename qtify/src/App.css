@@ -4,3 +4,19 @@
 
 	/* padding: 0px 32px; */
 }
+
+/* custom-prev and custom-next is for carousel
+since the navigation does not work with styles["custom-next"] syntax we have place this in the global css file. */
+.custom-prev,
+.custom-next {
+	position: absolute;
+	z-index: 10;
+}
+
+.custom-prev {
+	left: 10px;
+}
+
+.custom-next {
+	right: 10px;
+}
