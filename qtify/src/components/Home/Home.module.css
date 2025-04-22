@@ -1,0 +1,4 @@
+.root {
+	background-color: var(--color-black);
+	min-height: calc(100vh - 74px); /* 74px is the height of the navbar */
+}

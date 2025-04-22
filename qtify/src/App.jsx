@@ -1,9 +1,8 @@
 import { Route, Routes } from "react-router";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
 import "@fontsource/poppins/600.css";
-import RootPage from "./components/RootPage/RootPage";
+import Home from "./components/Home/Home";
 import { createTheme, ThemeProvider } from "@mui/material";
 
 const theme = createTheme({
@@ -20,8 +19,7 @@ function App() {
 			<div className="app-container">
 				<Navbar />
 				<Routes>
-					<Route path="/" element={<RootPage />} />
-					{/* <Route path="/" element={<Hero />} /> */}
+					<Route path="/" element={<Home />} />
 				</Routes>
 			</div>
 		</ThemeProvider>

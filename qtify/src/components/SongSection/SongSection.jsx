@@ -11,19 +11,15 @@ const SongSection = () => {
 	const [tabIndex, setTabIndex] = React.useState(0);
 
 	const handleChange = (event, newValue) => {
-		console.log("selected tab: ", newValue);
+		// newValue will be the selected tab index.
 		setTabIndex(newValue);
 	};
 
 	const selectedGenre = allGenres[tabIndex - 1]; // - 1 beause 0 is for "all"
-	// console.log("selectedGenre: ", selectedGenre);
 	const selectedGenreSongList =
 		tabIndex === 0
 			? allSongs
 			: allSongs.filter(({ genre }) => genre.key === selectedGenre.key);
-	// console.log("allSongs: ", allSongs);
-	// console.log("allGenres: ", allGenres);
-	// console.log("selectedGenresSongList: ", selectedGenreSongList);
 
 	useEffect(() => {
 		(async function () {
@@ -46,17 +42,10 @@ const SongSection = () => {
 				value={tabIndex}
 				onChange={handleChange}
 				aria-label="basic tabs example"
-				textColor="inherit" // Using the theme palette color name
-				// indicatorColor="white"
-				// sx={(theme) => ({ color: theme.palette.white.main })}
+				textColor="inherit"
 				sx={{
 					color: (theme) => theme.palette.white.main,
 				}}
-				// slotProps={{
-				// 	indicator: {
-				// 		style: { backgroundColor: "white" },
-				// 	},
-				// }}
 			>
 				<Tab
 					label="All"

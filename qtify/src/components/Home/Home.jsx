@@ -1,8 +1,9 @@
 import React from "react";
 import Hero from "../Hero/Hero";
 import Section from "../Section/Section";
-import styles from "./RootPage.module.css";
-const RootPage = () => {
+import styles from "./Home.module.css";
+
+const Home = () => {
 	return (
 		<div className={styles.root}>
 			<Hero />
@@ -11,4 +12,4 @@ const RootPage = () => {
 	);
 };
 
-export default RootPage;
+export default Home;

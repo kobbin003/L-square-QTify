@@ -56,7 +56,6 @@ function Search({ searchData, placeholder }) {
 	const navigate = useNavigate();
 	const onSubmit = (e, value) => {
 		e.preventDefault();
-		console.log(value);
 		navigate(`/album/${value.slug}`);
 		//Process form data, call API, set state etc.
 	};
@@ -88,7 +87,6 @@ function Search({ searchData, placeholder }) {
 			{groupedOptions.length > 0 ? (
 				<Listbox {...getListboxProps()}>
 					{groupedOptions.map((option, index) => {
-						// console.log(option);
 						const artists = option.songs.reduce((accumulator, currentValue) => {
 							accumulator.push(...currentValue.artists);
 							return accumulator;

@@ -1,6 +1,4 @@
 .carousel {
-	/* background-color: palevioletred; */
-	/* height: 100px; */
 	position: relative;
 	width: 100%;
 	display: flex;
@@ -8,15 +6,8 @@
 	justify-content: center;
 }
 .slide-container {
-	/* background-color: greenyellow; */
 	position: relative;
 	width: 96%;
-}
-
-.slide {
-	/* background-color: blueviolet;
-	position: relative;
-	width: 60%; */
 }
 
 button {

@@ -11,7 +11,6 @@ import nextSlide from "../../assets/nextSlide.svg";
 import Card from "../Card/Card";
 
 const Carousel = ({ mediaList, sectionName }) => {
-	// console.log("mediaList: ", mediaList);
 	return (
 		<div className={styles["carousel"]}>
 			<Swiper
@@ -44,9 +43,9 @@ const Carousel = ({ mediaList, sectionName }) => {
 				className={styles["slide-container"]}
 			>
 				{mediaList.length &&
-					mediaList.map((album) => (
+					mediaList.map((mediaDetail) => (
 						<SwiperSlide className={styles["slide"]}>
-							<Card album={album} />
+							<Card mediaDetail={mediaDetail} />
 						</SwiperSlide>
 					))}
 			</Swiper>

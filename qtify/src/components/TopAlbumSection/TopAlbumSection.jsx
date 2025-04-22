@@ -17,13 +17,17 @@ const TopAlbumSection = () => {
 	}, []);
 
 	return (
-		<MediaSectionGrid
-			mediaList={topAlbums}
-			headerText="Top Albums"
-			showGrid={showGrid}
-			setShowGrid={setShowGrid}
-			sectionName="topAlbums"
-		/>
+		<>
+			{topAlbums.length && (
+				<MediaSectionGrid
+					mediaList={topAlbums}
+					headerText="Top Albums"
+					showGrid={showGrid}
+					setShowGrid={setShowGrid}
+					sectionName="topAlbums"
+				/>
+			)}
+		</>
 	);
 };
 

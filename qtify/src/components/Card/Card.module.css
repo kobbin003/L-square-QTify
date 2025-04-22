@@ -3,8 +3,6 @@
 	height: 350px;
 	aspect-ratio: calc(1 / 1.45);
 	/* width: 159px; */
-	/* background-color: aqua; */
-	/* border: 1px solid red; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -14,9 +12,6 @@ img {
 	border-top-right-radius: 10px;
 }
 .top-section {
-	/* flex: 1; */
-	/* background-color: teal; */
-	/* height: 205px; */
 	position: relative;
 	height: 92%;
 	background-color: var(--color-white);
@@ -27,15 +22,12 @@ img {
 	justify-content: space-between;
 }
 .chip-section {
-	/* background-color: blue; */
 	flex: 1;
 	display: flex;
 	align-items: center;
 	padding-left: 10px;
 }
 .bottom-section {
-	/* background-color: pink; */
-	/* height: 21px; */
 	position: relative;
 	height: 6%;
 }

@@ -35,12 +35,12 @@ const MediaSectionGrid = ({
 					columnSpacing={2}
 					sx={{ paddingBottom: "3rem" }}
 				>
-					{mediaList &&
-						mediaList.map((album) => {
-							const { id } = album;
+					{mediaList.length &&
+						mediaList.map((mediaDetail) => {
+							const { id } = mediaDetail;
 							return (
 								<Grid key={id} size={2}>
-									<Card album={album} />
+									<Card mediaDetail={mediaDetail} />
 								</Grid>
 							);
 						})}
