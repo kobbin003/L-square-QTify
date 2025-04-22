@@ -2,11 +2,11 @@ import { Button, Grid } from "@mui/material";
 import React from "react";
 import Card from "../Card/Card";
 import Carousel from "../Carousel/Carousel";
-import styles from "./AlbumSectionGrid.module.css";
+import styles from "./MediaSectionGrid.module.css";
 
-const AlbumSectionGrid = ({
+const MediaSectionGrid = ({
 	headerText,
-	albumList,
+	mediaList,
 	showGrid,
 	setShowGrid,
 	sectionName,
@@ -35,8 +35,8 @@ const AlbumSectionGrid = ({
 					columnSpacing={2}
 					sx={{ paddingBottom: "3rem" }}
 				>
-					{albumList &&
-						albumList.map((album) => {
+					{mediaList &&
+						mediaList.map((album) => {
 							const { id } = album;
 							return (
 								<Grid key={id} size={2}>
@@ -46,10 +46,10 @@ const AlbumSectionGrid = ({
 						})}
 				</Grid>
 			) : (
-				<Carousel albumList={albumList} sectionName={sectionName} />
+				<Carousel mediaList={mediaList} sectionName={sectionName} />
 			)}
 		</>
 	);
 };
 
-export default AlbumSectionGrid;
+export default MediaSectionGrid;

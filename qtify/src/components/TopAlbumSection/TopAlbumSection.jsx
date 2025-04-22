@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import AlbumSectionGrid from "../AlbumSectionGrid/AlbumSectionGrid";
+import MediaSectionGrid from "../MediaSectionGrid/MediaSectionGrid";
 
 const TopAlbumSection = () => {
 	const [topAlbums, setTopAlbums] = useState([]);
@@ -17,8 +17,8 @@ const TopAlbumSection = () => {
 	}, []);
 
 	return (
-		<AlbumSectionGrid
-			albumList={topAlbums}
+		<MediaSectionGrid
+			mediaList={topAlbums}
 			headerText="Top Albums"
 			showGrid={showGrid}
 			setShowGrid={setShowGrid}

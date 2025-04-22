@@ -10,7 +10,8 @@ import prevSlide from "../../assets/prevSlide.svg";
 import nextSlide from "../../assets/nextSlide.svg";
 import Card from "../Card/Card";
 
-const Carousel = ({ albumList, sectionName }) => {
+const Carousel = ({ mediaList, sectionName }) => {
+	// console.log("mediaList: ", mediaList);
 	return (
 		<div className={styles["carousel"]}>
 			<Swiper
@@ -42,8 +43,8 @@ const Carousel = ({ albumList, sectionName }) => {
 				}}
 				className={styles["slide-container"]}
 			>
-				{albumList.length &&
-					albumList.map((album) => (
+				{mediaList.length &&
+					mediaList.map((album) => (
 						<SwiperSlide className={styles["slide"]}>
 							<Card album={album} />
 						</SwiperSlide>

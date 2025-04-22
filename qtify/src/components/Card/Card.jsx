@@ -5,7 +5,7 @@ import styles from "./Card.module.css";
 // const Card = () => {
 const Card = ({ album }) => {
 	const { title, follows, image } = album;
-	console.log("card-album:", album);
+	// console.log("card-album:", album);
 	return (
 		<div className={styles.card}>
 			<div className={styles["top-section"]}>
